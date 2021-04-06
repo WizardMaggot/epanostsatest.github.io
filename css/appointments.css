@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@350&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #3b4252ff;
+}
+
+a {
+    text-decoration: none;
+}
+.grey {
+    color: grey;
+}
+
+.right-tab {
+    font-family: 'Nunito';
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 1px;
+    margin-left: 1px;
+    font-size: 20px;
+    color: #ffffff;
+    background: #3b4252ff;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px rgb(161, 161, 161);
+}
+
+.right-tab:hover {
+    color: #ffffff;
+    background: rgb(45, 50, 61);
+    box-shadow: 3px 3px 3px rgb(161, 161, 161);
+}
+
+.spacer {
+    width: 10px;
+}
+
+.name {
+    text-transform: uppercase;
+    color: black;
+    font-size: 30px;
+    font-family: "Nunito";
+    margin-left: 10px;
+}
+
+#wave {
+    position: absolute;
+    height: 708px;
+    top: -120px;
+    width: 101%;
+    margin-left: -1px;
+}
+
+#titlearea {
+    position: relative; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    width: 100%;
+}
+
+#titleicon {
+    margin-left: 20px;
+}
+
+#titletitle-appointment {
+    font-family: "Nunito";
+    color: #3b4252ff;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#appointment-content-surround {
+    width: 1000px;
+    opacity: 0;
+    height: fit-content;
+    background: whitesmoke;
+    padding-bottom: 20px;
+    margin: auto;
+    padding-left: 10px; padding-right: 10px; padding-top: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+#appointment-content {
+    color: #3b4271;
+    height: fit-content;
+    font-family: "Nunito";
+    padding-left: 40px;
+    margin-top: -70px;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    line-height: 40px;
+}
+
+#submit-appointment-form {
+    text-align: center;
+    font-family: "Nunito";
+    font-weight: bold;
+    font-size: 30px;
+    color: #3b4252;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 100px;
+    background: white;
+}
+
+#references {
+    font-size: 20px;
+    color: whitesmoke; 
+}
+.link {
+    height: 30px;
+    border-bottom: 2px solid transparent;
+    color: rgb(165, 165, 245) !important;
+}
+
+.link:hover {
+    border-bottom: 2px solid rgb(165, 165, 245);
+}
+
+.appointment-input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #3b4252;
+    width: 90%;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #3b4271;
+    font-size: 16px;
+    box-shadow: 0px 0px 0px transparent;
+    font-family: "Nunito";
+    transition: 0.2s;
+}
+
+.appointment-input:focus {
+    border-radius: 10px;
+    border: 2px solid #d6d6d6;
+    background: #d6d6d6;
+    color: black;
+}
+
+.question {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 60px;
+    font-size: 20px;
+    font-family: "Nunito";
+}
+
+.question-mark {
+    width: 40px;
+    height: 40px;
+    margin-top: 60px;
+}
+
+::placeholder {
+    color: rgb(129, 129, 129);
+}
+
+#submit-button {
+	background: #51c483; 
+	font-family: "Nunito"; 
+	font-size: 20px;
+	padding-left: 30px; 
+    outline: none;
+    border: none;
+    color: white;
+	padding-right: 30px; 
+	padding-top: 12px; 
+    height: 50px;
+	padding-bottom: 5px;
+	margin-top: 20px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+#submit-button:hover {
+    cursor: pointer;
+    background: #3b9662;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.symptom-checker-button {
+	font-family: "Nunito";
+	padding: 3px;
+    position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: 1px;
+	margin-left: 20px;
+	font-size: 20px;
+	color: #ffffff;
+	background: #3b4252ff;
+	border: none;
+	border-radius: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 2px 2px 2px rgb(161, 161, 161);
+}
+
+.error {
+    display: none;
+    color: rgb(255, 87, 87);
+    font-size: 17px;
+    font-family: "Nunito";
+}

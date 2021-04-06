@@ -1,0 +1,259 @@
+body {
+	padding-right: 10px;
+	background-image: url(../images/repeated-background.png);
+	background-size: 100% 100%;
+	background: #7fb6ff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.spacer {
+	width: 10px;
+}
+
+
+#wavy {
+	position: fixed;
+	z-index: -1;
+	margin-top: 100px;
+	height: 600px;
+	filter: saturate(130%) brightness(200%);
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+#titleimage {
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 770px;
+	filter: saturate(150%) brightness(80%);
+	object-fit: cover;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+#titletext {
+	position: absolute; 
+	margin-left: auto; 
+	margin-right: auto;
+	top: 250px;
+	left: 50%;
+	-ms-transform: translate(-50%, -25%);
+	transform: translate(-50%, -25%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+#appointment-image-m, #bot-image-m, #diagnosis-image-m, #doctor-image-m {
+	display: none;
+}
+
+#titletextleft {
+	display: flex;
+	align-items: center;
+}
+
+#titlelogoimage {
+	background-attachment: fixed;
+}
+
+#titletextname {
+	text-transform: uppercase;
+	color: white;
+	font-family: "Nunito";
+	font-size: 100px;
+	margin-left: 20px;
+}
+#titletextslogan {
+	color: white;
+	font-family: "Nunito";
+	font-size: 40px;
+}
+
+.name {
+	text-transform: uppercase;
+	color: black;
+	font-size: 30px;
+	font-family: "Nunito";
+	margin-left: 10px;
+}
+
+
+#appointment-description, #bot-description, #doctor-description, #diagnosis-description {
+	position: relative;
+	border-radius: 50px;
+	display: flex; justify-content: center; align-items: center;
+	height: 700px; background: whitesmoke; opacity: 0;
+}
+
+#appointment-description, #doctor-description, #newsletter {
+	margin-left: -200px;
+}
+
+#bot-description, #diagnosis-description {
+	margin-right: -200px;
+}
+
+#appointment-description {
+	margin-top: 820px;
+}
+
+#bot-description, #diagnosis-description {
+	background: #c7dcff; top: 0;
+}
+
+
+
+#appointment-header, #bot-header, #doctor-header, #diagnosis-header {
+	font-size: 35px;
+	font-family: 'Nunito';
+	border-bottom: 4px solid #4C566A;
+	width: 500px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+
+#appointment-paragraph, #bot-paragraph, #doctor-paragraph, #diagnosis-paragraph {
+	margin-top: 15px;
+	line-height: 1.7;
+	font-family: 'Nunito';
+	font-size: 20px;
+	width: 500px;
+}
+
+
+#appointment-image, #doctor-image {
+	margin-left: 60px;
+	transition: 0.2s;
+}
+
+#bot-image, #diagnosis-image {
+	margin-right: 60px;
+	transition: 0.2s;
+}
+
+#appointment-image:hover, #doctor-image:hover, #bot-image:hover, #diagnosis-image:hover {
+	transform: scale(1.05, 1.05);
+}
+
+#appointment-button, #bot-button, #doctor-button, #diagnosis-button {
+	background: white; 
+	font-family: "Nunito"; 
+	font-size: 20px;
+	padding-left: 30px; 
+	padding-right: 30px; 
+	padding-top: 10px; 
+	padding-bottom: 10px;
+	margin-top: 20px; 
+	position: absolute; 
+	border-radius: 10px; 
+	color: #2E3440;
+	transition: 0.3s;
+}
+#appointment-button, #doctor-button {
+	background: #3b4252ff; 
+	color: white;
+}
+#appointment-button:hover, #bot-button:hover, #doctor-button:hover, #diagnosis-button:hover {
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+	transform: scale(1.1, 1.1);
+}
+
+
+#newsletter {
+	border-radius: 50px;
+	position: relative;
+	background: #3b4252ff; 
+	font-family: "Nunito";
+	height: 900px;
+	text-align: center; 
+	padding-top: 50px;
+}
+#newsletter-header {
+	color: white; 
+	font-size: 40px; 
+	font-weight: bold; 
+	margin-top: 50px;
+	border-bottom: 2px solid rgb(165, 186, 235);
+	padding-bottom: 30px;
+	width: 1000px; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+#newsletter-articles {
+	display: flex; 
+	justify-content: center;
+}
+.newsletter-article {
+	width: 350px; 
+	background: white;
+	margin-left: 10px;
+	padding-bottom: 20px;
+	height: 500px; 
+	border-radius: 20px;
+	margin-bottom: 200px;
+	box-shadow: 0 25px 50px rgba(0, 0, 0, 0.438);
+	transition: transform 0.2s;
+}
+
+.newsletter-article:hover {
+	z-index: 9999;
+	transform: scale(1.1, 1.1);
+}
+
+.newsletter-article-image {
+	width: 350px; 
+	height: 200px; 
+	object-fit: cover; 
+	border-top-left-radius: 20px; 
+	border-top-right-radius: 20px;
+}
+.newsletter-article-header {
+	font-size: 20px;
+	border-bottom: 4px solid #4C566A;
+	width: 300px; 
+	margin-left: auto; 
+	margin-right: auto;
+	padding-bottom: 20px;
+}
+.newsletter-article-preview {
+	font-size: 18px; 
+	margin-left: 50px;
+	margin-right: 50px; 
+	text-align: left;
+}
+
+.newsletter-article-button {
+	font-family: "Nunito";
+	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 1px;
+	margin-left: 1px;
+	font-size: 20px;
+	color: #ffffff;
+	background: #3b4252ff;
+	border: none;
+	border-radius: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 2px 2px 2px rgb(161, 161, 161);
+}
+.newsletter-article-button:hover {
+	color: #ffffff;
+	background: rgb(45, 50, 61);
+	box-shadow: 3px 3px 3px rgb(161, 161, 161);
+}
+

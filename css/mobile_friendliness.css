@@ -1,0 +1,1029 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@350&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+	transition: 0.3s;
+}
+
+option {
+	background: #3b4252ff;
+	color: white;
+	font-family: "Nunito";
+	outline: none;
+	border: none;
+}
+
+.sign-in-tab, .profile-tab {
+	position: fixed;
+	font-family: 'Nunito';
+	padding: 10px;
+	right: 20px;
+	margin-top: -5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 17px;
+	color: #ffffff;
+	background: #3b4252ff;
+	border-radius: 40px;
+	transition: 0.3s;
+	box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.2);
+}
+
+.profile-tab {
+	display: none;
+}
+
+.sign-in-tab:hover, .profile-tab:hover {
+	color: #ffffff;
+	background: rgb(45, 50, 61);
+	box-shadow: 3px 6px 6px rgb(0, 0, 0, 0.35);
+}
+
+#wave {
+	filter: saturate(140%) brightness(240%);
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	z-index: 1;
+  }
+  ::-webkit-scrollbar-thumb {
+	/*border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;*/
+	background: rgb(84, 92, 112);
+	z-index: 1;
+  }
+  ::-webkit-scrollbar-track {
+	background: white;
+	border-radius: 0px;
+	z-index: 1;
+  }
+
+html, body {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	overflow-y: hidden !important;
+}
+
+#contact {
+	box-shadow: -5px -3px 10px rgba(0, 0, 0, 0.1);
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	position: relative;
+	margin-right: -200px;
+	opacity: 0;
+	background: whitesmoke; 
+	font-family: "Nunito";
+	height: fit-content;
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 80px;
+}
+
+.m {
+    display: none;
+}
+
+.tab {
+	-webkit-tap-highlight-color: transparent;
+	color: white;
+	font-family: "Quicksand";
+	padding: 5px;
+	border: 2px solid transparent;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 1px;
+	margin-left: 1px;
+	font-size: 0.15625in;
+	background: transparent;
+	border-radius: 5px;
+	transition: all 0.15s ease;
+	outline: none;
+}
+
+.grey {
+	margin-left: -10px;
+	margin-top: 6px;
+	color: transparent;
+}
+
+a { text-decoration: none; display: inline-block; transition: 0.3s; }
+
+.tab:hover {
+	color: white !important;
+	background:  #3b4252ff;
+	border-radius: 50px;
+}
+
+#tabs2 {
+	display: inherit;
+	color: rgb(0, 64, 124);
+	/*margin-left: auto;
+	margin-right: 50px;*/
+}
+
+.name {
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
+	font-family: "Nunito";
+	margin-left: 10px;
+}
+
+#panel {
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	background: transparent;
+	padding: 20px;
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	box-shadow: none;
+	transition: 0.3s;
+}
+
+#logo {
+	height: 40px !important;
+	transition: transform 0.1s;
+}
+
+#logo:hover {
+	transform: scale(1.1);
+}
+
+#contact-header {
+	border-bottom: 3px solid #3b4252ff;
+	padding-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	text-align: center;
+	background: whitesmoke; 
+	font-family: "Nunito";
+	font-size: 40px;
+	color: #3b4252ff;
+}
+
+.social-media-label {
+	font-family: "Quicksand";
+	font-weight: 500;
+	text-align: center;
+}
+
+.social-media-image {
+	width: 60px;
+	filter: saturate(200%);
+}
+
+#contact-info {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	line-height: 3;
+	font-size: 15px;
+	font-family: Nunito;
+	width: 1000px;
+	display: flex;
+}
+
+.social-media-section {
+	flex: 1;
+	transition: transform 0.2s;
+}
+
+.social-media-section:hover {
+	transform: scale(1.4, 1.4);
+}
+
+#tabs {
+	line-height: 3;
+	height: 0%;
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+#show-panel-button {
+	display: none;
+	position: fixed;
+	right: 10px;
+	transition: opacity 0.5s;
+	filter: invert();
+}
+
+#show-panel-button:hover {
+	background: none;
+	transform: none;
+}
+
+@media only screen and (max-width: 1025px) {
+	#body-image {
+		width: 60vw;
+	}
+
+	#section-spacer {
+		height: 600px;	
+	}
+
+	.m {
+		display: inline-block;
+	}
+
+	#logout-button {
+		top: 250px;
+	}
+
+	.newsletter-article {
+		border-radius: 50px;
+    }
+
+	.article-contents {
+		margin-top: 160px;
+	}
+
+	.newsletter-article-image {
+		border-top-right-radius: 50px;
+		border-top-left-radius: 50px;
+    }
+
+	#contact-header {
+		border-bottom: 2px solid #3b4252ff;
+	}
+
+	.question {
+		font-size: 15px;
+		width: 200px;
+	}
+
+	.question-mark {
+		margin-bottom: 40px;
+	}
+
+	#appointment-content {
+		padding-left: 5px;
+		margin-top: -100px;
+		width: 100%;
+	}
+
+	#appointment-content-surround {
+		width: 90%;
+	}
+
+	body {
+		position: relative;
+		left: 0px;
+	}
+
+	#appointment-description {
+        text-align: center;
+		margin-top: 450px;
+	}
+
+	.article-main-title, .medium, .article-main-paragraph, #experts {
+		margin-left: 15px;
+	}
+
+	.article {
+		display: block;
+	}
+
+	#topimage {
+		margin-top: 0px;
+		margin-left: -50px;
+	}
+
+	#bottomimage {
+		margin-top: -10px;
+		margin-left: -50px;
+	}
+
+	.article-main-paragraph {
+		width: 320px;
+	}
+
+	.article-main-paragraph:nth-child(1) {
+		margin-top: -120px !important;
+	}
+
+	#experts {
+		width: 300px;
+		line-height: 2;
+	}
+
+	#titletextname {
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		border-bottom: 2px solid white;
+		font-size: 70px;
+		margin-bottom: 20px;
+	}
+
+	#br {
+		display: none;
+	}
+
+	#titletextslogan {
+		margin-top: 0;
+		font-size: 20px;
+		width: 100%;
+		text-align: center;
+	}
+
+	#titletext {
+		display: block;
+		top: 200px;
+	}
+
+	#titleimage {
+		height: 600px;
+	}
+
+	#line {
+		display: none;
+	}
+	
+	#wavy {
+		height: 420px;
+		top: -100px;
+	}
+
+	#tabs2 {
+		display: none;
+	}
+	
+	#appointment-paragraph, #bot-paragraph, #doctor-paragraph, #diagnosis-paragraph {
+		font-size: 18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 340px;
+		text-align: center;
+	}
+
+    #appointment-image, #bot-image, #diagnosis-image, #doctor-image, #about-main-image {
+        display: none;
+    }
+
+    #appointment-image-m, #bot-image-m, #diagnosis-image-m, #doctor-image-m {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+	.social-media-image {
+		width: 40px;
+		height: 40px;
+	}
+
+	#contact-info {
+		display: block;
+		width: auto;
+	}
+
+	.social-media-section {
+		text-align: center;
+		width: fit-content;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#tabs {
+		opacity: 1;
+		height: 0%;
+		text-align: center;
+		position: fixed;
+		top: 60px;
+		left: 0;
+		background-color: #6a7794;
+		width: 100%;
+		overflow-y: hidden;
+	}
+
+	#appointment-header, #doctor-header, #diagnosis-header, #bot-header, #newsletter-header, #contact-header {
+		margin-top: 20px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	#newsletter-articles {
+		display: block;
+	}
+
+	.newsletter-article {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -180px;
+	}
+
+	#header-image {
+		height: 100px;
+		width: 100px;
+		margin-left: 20px;
+	}
+
+	#titletitle-a {
+        font-size: 30px;
+        margin-top: -50px;
+		width: 320px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+	#titlearea-a {
+		display: block;
+		margin-top: 120px;
+	}
+
+	#newsletter {
+		height: 1800px;
+	}
+
+	#newsletter-a {
+		height: 1200px;
+	}
+
+	#first-article {
+		margin-top: 20px;
+	}
+
+	#diagnosis-description {
+		height: 750px;
+	}
+
+	#appointment-button, #bot-button, #doctor-button, #diagnosis-button {
+		left: 0;
+		right: 0;
+		width: fit-content;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#appointment-description, #bot-description, #doctor-description, #diagnosis-description, #newsletter, #contact {
+		position: relative;
+		margin-top: 500px;
+	}
+
+	#appointment-description {
+		margin-top: 650px;
+		height: 800px;
+	}
+
+	#doctor-description {
+		padding-bottom: 50px;
+	}
+
+	#contact {
+		background: whitesmoke; 
+		font-family: "Nunito";
+		height: fit-content;
+		margin-top: 50px;
+		padding-top: 50px;
+		padding-bottom: 80px;
+	}
+
+	.tab {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		outline: none;
+		border-radius: 0px;
+		margin-top: 5px;
+		width: 40%;
+		padding: 0px;
+		font-size: 2.3vh;
+	}
+
+	.sign-in-tab, .profile-tab {
+		position: relative;
+		width: 84%;
+		padding: 0px;
+		padding-top: 1vh;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 2.3vh;
+		height: 8vh;
+		right: unset;
+	}
+
+	.tab:first-of-type {
+		margin-top: 3px;
+	}
+
+	#submit-appointment-form {
+		width: 70%;
+		font-size: 20px;
+		padding: 20px;
+	}
+
+	#submit-button {
+		margin-left: 10px;
+	}
+
+	.tab:hover {
+		color: white !important;
+		outline: none;
+		border-radius: 10px;
+		background: #3b4252ff;
+		border: 2px solid #3b4252ff;
+	}
+
+	.grey { display: none }
+
+	#show-panel-button {
+		margin-left: 10px;
+		display: inline;
+	}
+
+    #titletitle {
+        font-size: 50px;
+        margin-top: 0px;
+        padding-left: 20px;
+		padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+	.profile-header {
+		margin-top: 30px;
+		font-size: 25px;
+		width: 70vw !important;
+	}
+
+	.icon {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px !important;
+	}
+
+	button .icon {
+		display: inline;
+		margin-bottom: -10px !important;
+		margin-right: 10px;
+	}
+
+	#sign-in-surround {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+	
+	#appointment-dashboard {
+		text-align: center;
+		padding: 15px;
+		padding-top: 0px;
+		padding-bottom: 25px;
+		width: -webkit-calc(70vw + 40px);
+	}
+
+	.appointment {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#about-description {
+		height: 900px;
+	}
+
+    #about-main-image-m {
+        width: 120%;
+        left: 0;
+		margin-top: -60px;
+        height: auto;
+        display: block;
+    }
+
+    #about-main-left {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #about-main-title {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about-main {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: -40px;
+    }
+
+    #about-main-paragraph {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+	#titleicon {
+		height: 150px;
+	}
+
+	#titletitle-doctors {
+		font-size: 30px;
+		margin-left: 10px;
+	}
+
+	#titleicon {
+		width: 100px;
+		height: 100px;
+	}
+
+	.doctorbox {
+		text-align: center;
+		display: block;
+		width: 76%;
+		height: 360px;
+		padding-bottom: 50px;
+	}
+
+	#titlearea-appointment-booked {
+		text-align: center;
+		display: block;
+		margin-top: 100px;
+		height: 300px;
+	}
+
+	#checkmark-paper {
+		width: 100px;
+	}
+
+	#titletitle-appointment-booked {
+		font-size: 30px;
+		margin-left: 0;
+	}
+	#titletitle-small {
+		font-size: 18px;
+		text-align: center;
+		width: 100%;
+		font-weight: normal;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#return-button {
+		width: fit-content;
+		font-size: 15px;
+		width: fit-content;
+		margin-left: -90px;
+		margin-right: auto;
+		margin-top: 40px;
+	}
+
+	#first-doctorbox {
+		margin-top: 10px;
+	}
+
+	.doctorname {
+		font-size: 23px;
+		padding: none;
+	}
+
+	.doctordescription {
+		font-size: 15px;
+	}
+
+	.doctorfield {
+		position: relative;
+		margin-top: -20px;
+		font-size: 20px;
+	}
+
+	#titlearea-doctors {
+		height: 440px;
+	}
+
+	#titlearea {
+		height: 380px;
+	}
+
+	#titletitle-references {
+		font-size: 50px;
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	#titletitle-appointment {
+		font-size: 30px;
+		margin-top: 50px;
+		margin-left: 0px;
+	}
+
+	#ref-content-surround {
+		width: 300px;
+	}
+
+	.doctorimage {
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100px;
+		width: 100px;
+	}
+
+	.doctortext {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.newsletter-article-header {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+	
+    #wave {
+        top: -80px;
+        height: 500px;
+		width: 120%;
+		left: -20%;
+    }
+
+	#content {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#botimage {
+		height: 270px;
+		margin-left: 25px;
+		margin-top: 30px;
+	}
+
+	#botimage-surrounding {
+		margin-left: auto;
+		margin-right: auto;
+		width: 300px;
+		height: 300px;
+	}
+
+	#bot {
+		margin-top: 60px;
+	}
+
+	#chatarea {
+		width: 90vw;
+		height: 700px;
+	}
+
+	#chatbox {
+		width: 113%;
+		height: 630px;
+	}
+
+	#chatbar {
+		width: 97%;
+		height: 50px;
+		border-radius: 50px;
+	}
+
+	.clientmessage, .botmessage {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 767px) {
+	#topimage {
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	#chatarea {
+		height: 410px !important;
+	}
+
+	#chatbox {
+		height: 360px !important;
+		width: 115% !important;
+	}
+
+	#chatbar {
+		height: 30px;
+		width: 96% !important;
+	}
+
+	.pfp {
+		height: 70px;
+		width: auto;
+	}
+
+	#bottomimage {
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	.clientmessage, .botmessage {
+		font-size: 15px;
+	}
+
+	.article-contents, .article {
+		width: 1000px !important;
+	}
+
+	.article-main-paragraph {
+		width: 700px;
+	}
+
+	#titletitle-a {
+		font-size: 40px;
+		width: 600px;
+	}
+
+	#topimage, #bottomimage {
+		position: relative;
+		margin-right: auto;
+		margin-top: 20px;
+		width: 800px !important;
+		height: 480px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+	#content {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#botimage {
+		height: 140px;
+		margin-left: 25px;
+		margin-top: 30px;
+	}
+
+	#botimage-surrounding {
+		margin-left: auto;
+		margin-right: auto;
+		width: 180px;
+		height: 180px;
+	}
+
+	#bot {
+		margin-top: 60px;
+	}
+
+	#chatarea, #chatbox {
+		width: 90%;
+	}
+
+	#chatbox {
+		width: 104%;
+		height: 240px;
+	}
+
+	#chatarea {
+		height: 280px;
+	}
+
+	#chatbox-right {
+		margin-right: 0px;
+	}
+
+	#chatbox-left {
+		margin-left: 0px;
+	}
+
+	#chatbar {
+		width: 91%;
+		height: 20px;
+	}
+}
+
+@media only screen and (max-width: 320px) { /* literally just for the galaxy fold */
+    #bot-description, #doctor-description, #diagnosis-description {
+        height: 850px;
+    }
+
+	#appointment-paragraph, #bot-paragraph, #doctor-paragraph, #diagnosis-paragraph {
+		width: 250px;
+	}
+
+	#appointment-description {
+		height: 900px;
+	}
+
+	.article-contents {
+		margin-top: 150px;
+	}
+
+	.article {
+		width: 250px;
+		margin-left: 0;
+	}
+
+	#topimage, #bottomimage {
+		height: 250px !important;
+		width: 417px !important;
+	}
+
+	#bottomimage {
+		margin-bottom: -120px;
+	}
+
+	.article-main-paragraph {
+		width: 250px;
+	}
+
+	.doctorbox {
+		width: 70%;
+		height: 430px;
+	}
+
+	#titletitle-doctors {
+		font-size: 23px;
+	}
+
+    #wave {
+        height: 500px;
+    }
+
+    .newsletter-article-image {
+        width: 100%;
+    }
+
+    .newsletter-article-header {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .newsletter-article {
+        width: calc(100% - 10px);
+    }
+
+	#chatarea {
+		width: 90vw;
+	}
+
+	#chatbox {
+		width: 106%;
+	}
+
+	.botmessage, .clientmessage {
+		width: 70%;
+	}
+
+	#chatbar {
+		width: 90%;
+	}
+
+	#chatbox-right {
+		margin-right: 40px;
+	}
+
+	#titletitle-a {
+		display: block;
+		margin-top: -50px;
+		font-size: 30px;
+		width: 200px;
+	}
+
+	#ref-content-surround {
+		width: 250px;
+	}
+
+	#newsletter-a {
+		height: 1200px;
+	}
+}
+
+/*@media screen and (min-width: 900) {
+	#tabs {
+		display: none;
+	}
+}*/
+
+@media screen and (max-height: 580px) {
+	#tabs {
+		line-height: 2.6;
+	}
+}
+
+@media screen and (max-height: 400px) {
+	#tabs {
+		line-height: 1.5;
+	}
+}
